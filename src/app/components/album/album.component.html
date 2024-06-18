@@ -1,0 +1,11 @@
+<div class="flex flex-wrap justify-left mt-10">
+  <ng-container *ngFor="let album of albumList">
+    <app-card
+      [id]="album.id"
+      [title]="album.title"
+      [url]="album.url"
+      [thumbnailUrl]="album.thumbnailUrl"
+    >
+    </app-card>
+  </ng-container>
+</div>
