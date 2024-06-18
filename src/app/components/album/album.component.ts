@@ -3,11 +3,12 @@ import { Album } from '../../models/album.model';
 import { AlbumService } from '../../services/album-service.service';
 import { CardComponent } from '../card/card.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-album',
   standalone: true,
-  imports: [CardComponent,CommonModule],
+  imports: [CardComponent, CommonModule,HttpClientModule],
   templateUrl: './album.component.html',
   styleUrl: './album.component.scss',
   providers: [AlbumService,],

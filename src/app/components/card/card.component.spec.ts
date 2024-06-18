@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CommonModule } from '@angular/common';
 import { CardComponent } from './card.component';
 
 describe('CardComponent', () => {
@@ -8,7 +8,7 @@ describe('CardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardComponent]
+      imports: [CardComponent,CommonModule]
     })
     .compileComponents();
     
